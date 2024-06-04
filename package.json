@@ -1,0 +1,15 @@
+{
+  "name": "crocodiles-postman-tests",
+  "version": "1.0.0",
+  "description": "**Workspace:** [Tests](https://web.postman.co/workspace/crocodiles~e5f265a3-e53b-421f-8b08-fef0e675f775)",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run crocodiles.postman_collection.json -e prod.postman_environment.json --reporters htmlextra --reporter-htmlextra-export report.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^6.1.2",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
